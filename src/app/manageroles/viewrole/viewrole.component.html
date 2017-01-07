@@ -1,0 +1,54 @@
+<div class="w3-container ">
+  
+            <div class="w3-container" >
+             <button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge w3-right" routerLink="/addrole">Addrole</button>
+                 <a class=" w3-container " routerLink="/viewrole"><b>ViewRole</b></a>
+
+            </div>
+                
+            <div class="w3-container">
+
+                    <table class="w3-table w3-bordered">
+                        <tr>
+                        <th>Rloe Name</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                        </tr>
+                        <tr>
+                        <td>Admin</td>
+                        <td>Admin</td>
+                        <td> <button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/editrole">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>SuperAdmin</td>
+                        <td>SuperAdmin</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/editrole">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Developer</td>
+                        <td>Developer</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/editrole">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Customer</td>
+                        <td>Customer</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/editrole">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Merchant</td>
+                        <td>Merchant</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/editrole">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Reseller</td>
+                        <td>Reseller</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/editrole">Edit</button></td>
+                        </tr>
+                    </table>
+            </div>
+
+                
+                
+                <a [routerLink]="['/managerole']" class="btn btn-link">Goback to manageroles</a>
+                 
+      </div>

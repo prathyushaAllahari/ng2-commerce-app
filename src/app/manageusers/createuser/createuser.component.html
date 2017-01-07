@@ -1,0 +1,50 @@
+<div class="w3-container ">
+  
+            <div class="w3-container" >
+                 <h2>createuser</h2>
+            
+            </div>
+            <hr>
+                
+   <form class="w3-container" action="form.asp">
+        <div class="w3-section">
+          <div class="w3-row-padding">
+              <div class="w3-half">
+                <label>First Name</label>
+                <input class="w3-input w3-border" type="text" placeholder="Enter FirstName" required>
+              </div>
+              <div class="w3-half">
+                <label>Last Name</label>
+                <input class="w3-input w3-border" type="text" placeholder="Enter LastName" required>
+              </div>
+              <div class="w3-half">
+                <label>Phone Number</label>
+                <input class="w3-input w3-border" type="text" placeholder="Enter Phone Number" required>
+              </div>
+              <div class="w3-half">
+                <label>Enter EmailId</label>
+                <input class="w3-input w3-border" type="email" placeholder="Enter EmailId" required>
+              </div>
+              <div class="w3-half">
+                <label>Password</label>
+                <input class="w3-input w3-border" type="text" placeholder="Enter password" required>
+              </div>
+              <div class="w3-half">
+                <label>Select Role For This User</label>
+                <select class="w3-select w3-border" name="option" required>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Reseller">Reseller</option>
+                </select>
+            </div>
+            </div>
+          <button class="w3-btn-block w3-blue w3-section w3-padding" type="submit">Create User</button>
+         
+         </div>
+      </form>
+                
+                
+                <a [routerLink]="['/manageuser']" class="btn btn-link">Goback to manageusers</a>
+                 
+      </div>

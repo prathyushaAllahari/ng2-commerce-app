@@ -1,0 +1,28 @@
+<div class="header">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Ajaha</h1>
+        </div>
+        <div class="col-md-4" id="col-md-4">
+            <a [routerLink]="['/admin']" class="btn btn-link">Admin</a>
+            
+        </div>
+    </div>
+    
+</div>
+<div class="container">
+    <div class="inner">
+        
+        
+        <form action="">
+            <h2>Login to your account</h2><br>
+            <label><span class="glyphicon glyphicon-user"></span></label>
+            <input type="text" placeholder='Username' class="input" required /><br>
+            <label><span class="glyphicon glyphicon-lock"></span></label>
+            <input type="password" placeholder="password" class="input" required /><br>
+            <button type="submit" class="button">Sign in</button>
+             <button [routerLink]="['/register']" class="button">Register</button>
+        </form>
+        
+    </div>    
+</div>
