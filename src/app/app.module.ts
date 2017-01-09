@@ -7,7 +7,7 @@ import { appRouting } from './app.routing';
 import { AppComponent } from './app.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
-import {AdminComponent} from './admin/admin.component';
+import {SuperadminComponent} from './superadmin/superadmin.component';
 import {ManageroleComponent} from './manageroles/managerole.component';
 import {AddroleComponent} from './manageroles/addrole/addrole.component';
 import {EditroleComponent} from './manageroles/editrole/editrole.component';
@@ -15,6 +15,10 @@ import {ViewroleComponent} from './manageroles/viewrole/viewrole.component';
 import {ManageuserComponent} from './manageusers/manageuser.component';
 import {CreateuserComponent} from './manageusers/createuser/createuser.component';
 import {EdituserComponent} from './manageusers/edituser/edituser.component';
+import {AdminComponent} from './admin/admin.component';
+import {MerchantComponent} from './merchant/merchant.component';
+import {DeveloperComponent} from './developer/developer.component';
+import {ResellerComponent} from './reseller/reseller.component';
 import {NotfoundComponent} from './not-found/not-found.component';
 
 
@@ -23,7 +27,7 @@ import {NotfoundComponent} from './not-found/not-found.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    AdminComponent,
+    SuperadminComponent,
     ManageroleComponent,
     AddroleComponent,
     EditroleComponent,
@@ -31,6 +35,10 @@ import {NotfoundComponent} from './not-found/not-found.component';
     ManageuserComponent,
     CreateuserComponent,
     EdituserComponent,
+    AdminComponent,
+    MerchantComponent,
+    DeveloperComponent,
+   ResellerComponent,
     NotfoundComponent
   ],
   imports: [
