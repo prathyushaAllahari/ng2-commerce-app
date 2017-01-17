@@ -58,33 +58,76 @@
         <div class="col-sm-9 col-sm-offset-2 "> 
                             
         <div class="container">
-            <br><br> <br><br>
+            <br><br> 
         <form class="w3-container w3-card-4">
-           
-             <h2 class="w3-text-blue w3-center">Add Role</h2>
-             <hr>
-             <br>
-            <div class="form-group row">
-            <label for="inputRoleName" class="col-sm-2 col-form-label">Enter RoleName</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputRoleName" placeholder="Enter RoleName" required>
-            </div>
-            </div>
-             <div class="form-group row">
-            <label for="inputRoleDescriptionName" class="col-sm-2 col-form-label">Role Description</label>
-            <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputRoleDescriptionName" placeholder="Enter RoleDescriptionName"  required>
-            </div>
-            </div>
+           <br>
+            
+            
+ 
+ 
+
+ 
+
+  <ul class="w3-navbar w3-blue">
+      <li class="w3-navitem">View User</li>
+   
+    
+     <button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge w3-right" routerLink="/createuser">Create User</button>
+    
+  </ul>
+  <br>
+
+ 
+
+  
+
+
+            <hr>
+            
+          
+            <table class="w3-table w3-bordered">
+                        <tr>
+                        <th>Role Name</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                        </tr>
+                        <tr>
+                        <td>Admin</td>
+                        <td>Admin</td>
+                        <td> <button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/edituser">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>SuperAdmin</td>
+                        <td>SuperAdmin</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/edituser">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Developer</td>
+                        <td>Developer</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/edituser">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Customer</td>
+                        <td>Customer</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/edituser">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Merchant</td>
+                        <td>Merchant</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/edituser">Edit</button></td>
+                        </tr>
+                        <tr>
+                        <td>Reseller</td>
+                        <td>Reseller</td>
+                        <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/edituser">Edit</button></td>
+                        </tr>
+                    </table>
+                   
+                    <br>
             
                    
             
-    <hr>
-            <div class="form-group row">
-            <div class= "col-sm-10 col-sm-offset-2">
-                <button type="submit" class="btn btn-primary">create Role</button>
-            </div>
-            </div>
+   
   </form>
 </div>
                     

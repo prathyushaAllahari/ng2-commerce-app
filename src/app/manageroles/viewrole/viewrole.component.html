@@ -1,16 +1,93 @@
-<div class="w3-container ">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['/']"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-side-menu">
+   
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
-            <div class="w3-container" >
-             <button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge w3-right" routerLink="/addrole">Addrole</button>
-                 <a class=" w3-container " routerLink="/viewrole"><b>ViewRole</b></a>
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
 
-            </div>
-                
-            <div class="w3-container">
+                 <li data-toggle="collapse" data-target="#user" class="collapsed">
+                  <a href="#"><i class="fa fa-users fa-lg"></i> Users <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="user">
+                   <li [routerLink]="['/viewuser']">View User</li>
+                   <li [routerLink]="['/createuser']">Create User</li>
+                </ul>
 
-                    <table class="w3-table w3-bordered">
+               <li data-toggle="collapse" data-target="#role" class="collapsed">
+                  <a href="#"><i class="fa fa-users fa-lg"></i> Roles <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="role">
+                  <li [routerLink]="['/viewrole']">View Role</li>
+                  <li [routerLink]="['/addrole']">Add New Role</li>
+                </ul>
+                     </ul>
+     </div>
+
+</div>
+
+        <div class="col-sm-9 col-sm-offset-2 "> 
+                            
+        <div class="container">
+            <br><br> 
+        <form class="w3-container w3-card-4">
+           <br>
+            
+            
+ 
+ 
+
+ 
+
+  <ul class="w3-navbar w3-blue">
+      <li class="w3-navitem">View Role</li>
+   
+    
+     <button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge w3-right" routerLink="/addrole">Addrole</button>
+    
+  </ul>
+  <br>
+
+ 
+
+  
+
+
+            <hr>
+            
+          
+            <table class="w3-table w3-bordered">
                         <tr>
-                        <th>Rloe Name</th>
+                        <th>Role Name</th>
                         <th>Description</th>
                         <th>Action</th>
                         </tr>
@@ -45,10 +122,16 @@
                         <td><button class="w3-btn w3-white w3-border w3-border-blue w3-round-large" routerLink="/editrole">Edit</button></td>
                         </tr>
                     </table>
-            </div>
+                   
+                    <br>
+            
+                   
+            
+   
+  </form>
+</div>
+                    
+     
+  </div>
 
-                
-                
-                <a [routerLink]="['/managerole']" class="btn btn-link">Goback to manageroles</a>
-                 
-      </div>
+   

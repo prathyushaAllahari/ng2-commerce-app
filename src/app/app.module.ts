@@ -15,6 +15,7 @@ import {ViewroleComponent} from './manageroles/viewrole/viewrole.component';
 import {ManageuserComponent} from './manageusers/manageuser.component';
 import {CreateuserComponent} from './manageusers/createuser/createuser.component';
 import {EdituserComponent} from './manageusers/edituser/edituser.component';
+import {ViewuserComponent} from './manageusers/viewuser/viewuser.component';
 import {AdminComponent} from './admin/admin.component';
 import {MerchantComponent} from './merchant/merchant.component';
 import {DeveloperComponent} from './developer/developer.component';
@@ -35,6 +36,7 @@ import {NotfoundComponent} from './not-found/not-found.component';
     ManageuserComponent,
     CreateuserComponent,
     EdituserComponent,
+    ViewuserComponent,
     AdminComponent,
     MerchantComponent,
     DeveloperComponent,
