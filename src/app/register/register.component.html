@@ -1,62 +1,120 @@
- 
- <div class="w3-container ">
+ <div class="col-sm-10 col-sm-offset-1 "> 
+   <br><br>
+                            
+        <div class="container">
+           <br>
+        <form class="w3-container ">
+           
+             <h1 class="w3-text-white w3-center"><em>Register</em></h1>
+             <hr>
+             <br>
+              <div class="form-group row">
+            <label for="inputStoreName" class="col-sm-4 col-form-label">Store Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputStoreName" placeholder="Enter StoreName" required>
+            </div>
+            </div>
+             <div class="form-group row">
+            <label for="inputSelect" class="col-sm-4 col-form-label">What will you be selling?</label> 
+            <div class="col-sm-8">
+                <select class="form-control" name="option"  required>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="i'm not sure,yet">i'm not sure,yet</option>
+                    <option value="Apparel">Apparel</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Books/music/video">Books/music/video</option>
+                    <option value="Computers/Electronics">Computers/Electronics</option>
+                    <option value="Flowers/Gifts">Flowers/Gifts</option>
+                    <option value="HardWare/Home improvement">HardWare/Home improvement</option>
+                    <option value="HouseWares">HouseWares</option>   
+                    <option value="Jewelery">Jewelery</option>      
+                    <option value="Mass Merchant">Mass Merchant</option> 
+                    <option value="Office Supplies">Office Supplies</option> 
+                    <option value="Pet Care">Pet Care</option> 
+                    <option value="Speciality">Speciality</option> 
+                    <option value="Sporting Goods">Sporting Goods</option> 
+                    <option value="Toys/Hobbies">Toys/Hobbies</option> 
+                    <option value="Other,Something else">Other,Something else</option> 
+                     <option value="I don't have product to sell">I don't have product to sell</option> 
+                       v
+                </select>
+            </div>
+            </div>
+             <div class="form-group row">
+            <label for="inputSelect" class="col-sm-4 col-form-label">Where is your business based?</label> 
+            <div class="col-sm-8">
+                <select class="form-control" name="option"  required>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="India">India</option>       
+                </select>
+            </div>
+            </div>
+            <div class="form-group row">
+            <label for="inputFirstName" class="col-sm-4 col-form-label">FirstName</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputFirstName" placeholder="Enter FirstName" required>
+            </div>
+            </div>
+             <div class="form-group row">
+            <label for="inputLastName" class="col-sm-4 col-form-label">LastName</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Enter LastName"  required>
+            </div>
+            </div>
+             <div class="form-group row">
+            <label for="inputEmail" class="col-sm-4 col-form-label">Email</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email"  required>
+            </div>
+            </div>
+            <div class="form-group row">
+            <label for="inputPassword" class="col-sm-4 col-form-label">Password</label>
+            <div class="col-sm-8">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password"  required>
+            </div>
+            </div>
+            <div class="form-group row">
+            <label for="example-tel-input" class="col-sm-4 col-form-label">PhoneNumber</label>
+            <div class="col-sm-8">
+                <input class="form-control" type="tel" placeholder="Enter PhoneNumber" id="example-tel-input"  required>
+            </div>
+            </div>
+           
+             <div class="form-group row">
+            <label for="inputSelect" class="col-sm-4 col-form-label">What do you want to do?</label> 
+            <div class="col-sm-8">
+                <select class="form-control" name="option"  required>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="Start an online business">Start an online business</option>
+                    <option value="Expand my online business">Expand my online business</option>
+                    <option value="Switch e-commerce platforms">Switch e-commerce platforms</option>
+                    <option value="Add an online store to my offline business">Add an online store to my offline business</option>
+                    <option value="set up a store for a client">set up a store for a client</option>
+                    <option value="i'm a existing client">i'm a existing client</option>
+                    <option value="Research">Research as a student,app developer or job applicant</option>
+                    <option value="Food/Drug">Food/Drug</option>
+                       
+                       
+                </select>
 
-         <div class="w3-container" >
-                 <h2>Register</h2>
+            </div>
+            </div>
             
+    <hr>
+            <div class="form-group row">
+            <div class= "col-sm-10 col-sm-offset-5">
+                <button type="submit" class="btn btn-primary"><em>Register</em></button>
+                 <button  class="btn btn-warning" [routerLink]="['']"><em>Cancel</em></button>
+               
+        
             </div>
- <hr>
+            </div>
+           
+  </form>
+</div>
+                    
+     
+  </div>
+  
 
-<div class="w3-row-padding">
-            <div class="w3-half">
-              <label>What will you be selling?</label>
-               <select class="w3-select" name="option" required>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-            </div>
-            <div class="w3-half">
-              <label>Where is your business based?</label>
-               <select class="w3-select" name="option" required>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-            </div>
-            <div class="w3-half">
-              <label>Store Name</label>
-              <input class="w3-input" type="text" placeholder=" Enter StoreName" required>
-            </div>
-            <div class="w3-half">
-              <label>Phone Number</label>
-              <input class="w3-input" type="text" placeholder=" Enter phonenumber" required>
-            </div>
-             <div class="w3-half">
-              <label>First Name</label>
-              <input class="w3-input" type="text" placeholder="Enter firstname" required>
-            </div>
-             <div class="w3-half">
-              <label>Last Name</label>
-              <input class="w3-input" type="text" placeholder=" Enter Lastname" required>
-            </div>
-            <div class="w3-half">
-              <label>Email</label>
-              <input class="w3-input" type="Email" placeholder="Enter email" required>
-            </div>
-            <div class="w3-half">
-              <label>Password</label>
-              <input class="w3-input" type="Password" placeholder="Enter Password" required>
-            </div>
-          </div>
-
-
-
-
-       
-          <button class="w3-btn-block w3-blue w3-section w3-padding" type="submit">Register</button>
-         <a [routerLink]="['']" class="btn btn-link">Cancel</a>
-
- </div>
+   

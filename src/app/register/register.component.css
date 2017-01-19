@@ -1,3 +1,10 @@
-body {
-  background: #e0e0e0;
+.container {
+    background:url('https://drivenlocal.com/wp-content/uploads/2015/10/Material-design.jpg') no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+label{
+    color: white;
 }

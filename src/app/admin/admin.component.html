@@ -1,4 +1,4 @@
- <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -21,21 +21,41 @@
     </div>
   </div>
 </nav>
+
+<div class="nav-side-menu">
+   
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-     <a onclick="document.getElementById('id01').style.display='block'" >password</a><br>
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="/admin">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
+
+                 <li data-toggle="collapse" data-target="#profile" class="collapsed">
+                  <a href="#"><i class="fa fa-user fa-lg"></i> Profile <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="profile">
+                   
+                    <li onclick="document.getElementById('id01').style.display='block'" >password</li>
      
-         <a onclick="document.getElementById('id02').style.display='block'" >Update Profile</a>
+                   <li onclick="document.getElementById('id02').style.display='block'" >Update Profile</li>
+                </ul>
      
-    </div>
-    
-    <div class="col-sm-8 text-left"> 
-      <h1>Welcome To Reseller</h1>
+            </ul>
+     </div>
+
+</div>
+
+ <div class="col-sm-9 col-sm-offset-2  text-left"> 
+      <h1>Welcome To  Admin</h1>
       
       <hr>
-      <div class="w3-container">
+
+       <div class="w3-container">
   
  
 
@@ -46,6 +66,7 @@
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
        <header class="w3-container"> 
         <h2>Change Password</h2>
+        
       </header>
       </div>
 
@@ -64,17 +85,13 @@
 
       <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
         <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
-       
       </div>
-
-    </div>
+       </div>
   </div>
 </div>
 
-  <div class="w3-container">
-  
- 
 
+<div class="w3-container">
   <div id="id02" class="w3-modal">
     <div class="w3-modal-content w3-card-8 w3-animate-top" style="max-width:600px">
 
@@ -102,25 +119,10 @@
 
       <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
         <button onclick="document.getElementById('id02').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
-       
-      </div>
-
+     </div>
     </div>
   </div>
-</div>
-     
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
-  </div>
+ </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+   
