@@ -35,6 +35,15 @@
                   </a>
                 </li>
 
+                 <li data-toggle="collapse" data-target="#stockmanagement" class="collapsed">
+                  <a href="#"><i class="fa fa-shopping-cart fa-lg"></i> Stock Management <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="stockmanagement">
+                   
+                    <li [routerLink]="['/addproduct']">Add Product</li>
+                   <li [routerLink]="['/createuser']">Create User</li>
+                </ul>
+
                  <li data-toggle="collapse" data-target="#profile" class="collapsed">
                   <a href="#"><i class="fa fa-user fa-lg"></i> Profile <span class="arrow"></span></a>
                 </li>

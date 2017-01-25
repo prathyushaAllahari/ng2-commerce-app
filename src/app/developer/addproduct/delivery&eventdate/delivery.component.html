@@ -1,0 +1,125 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['/']"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-side-menu">
+   
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="/developer">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
+
+                 <li data-toggle="collapse" data-target="#stockmanagement" class="collapsed">
+                  <a href="#"><i class="fa fa-shopping-cart fa-lg"></i> Stock Management <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="stockmanagement">
+                   
+                    <li [routerLink]="['/addproduct']">Add Product</li>
+                   <li [routerLink]="['/createuser']">Create User</li>
+                </ul>
+
+                 <li data-toggle="collapse" data-target="#profile" class="collapsed">
+                  <a href="#"><i class="fa fa-user fa-lg"></i> Profile <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="profile">
+                   
+                    <li onclick="document.getElementById('id01').style.display='block'" >password</li>
+     
+                   <li onclick="document.getElementById('id02').style.display='block'" >Update Profile</li>
+                </ul>
+     
+            </ul>
+     </div>
+
+</div>
+
+
+ <div class="col-sm-9 col-sm-offset-2  text-left  "> 
+     <br>
+     <div class="w3-container w3-section w3-leftbar w3-border-red w3-blue">
+        <h3><em>Add Product</em></h3>
+     </div>
+
+    
+  
+
+  <div class="w3-panel w3-round-large w3-card-4 w3-sand">
+    <ul class="w3-navbar  ">
+   
+    <li><a class="w3-hover-blue" routerLink="/details">Details</a></li>
+    <li><a class="w3-hover-blue" routerLink="/images&videos">Images & Videos</a></li>
+    <li><a class="w3-hover-blue" routerLink="/inventory">Inventory</a></li>
+    <li><a class="w3-hover-blue" routerLink="/options">Options</a></li>
+    <li><a class="w3-hover-blue" routerLink="/customfields">Custom Fields</a></li>
+    <li><a class="w3-hover-blue" routerLink="/delivery&eventdate">Delivery/Event Date</a></li>
+    <li><a class="w3-hover-blue" routerLink="/bulkpricing">Bulk Pricing</a></li>
+   
+  </ul>
+ <hr>
+
+ <details open>
+   <br>
+  <summary class="w3-container w3-round-large w3-leftbar w3-border-red w3-black"><em>Delivery/Event Date</em></summary>
+
+        
+            
+         <div class="form-group row">
+              
+              <label for="inputcategories" class="col-sm-2 col-sm-offset-2 col-form-label">Date Required to Purchase?</label>
+            <div class="col-sm-5">
+             <label>Yes,customers must </label>
+             <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Specify a date to purchase this product
+                </label>
+             </div>
+
+               
+            </div>
+         </div>
+         <hr>
+             <div class="col-sm-11 col-sm-offset-10"> 
+
+         <button class="w3-btn w3-white w3-border w3-border-blue w3-round-xlarge">Save</button>
+           <button class="w3-btn w3-white w3-border w3-border-yellow w3-round-xlarge">Cancel</button>
+      <br><br>
+         </div>
+         
+
+</details>
+
+
+<br>
+        
+   </div>
+    
+  
+
+
+   

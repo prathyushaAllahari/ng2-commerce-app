@@ -14,6 +14,12 @@ import {ViewuserComponent} from './manageusers/viewuser/viewuser.component';
 import {AdminComponent} from './admin/admin.component';
 import {MerchantComponent} from './merchant/merchant.component';
 import {DeveloperComponent} from './developer/developer.component';
+import {AddproductComponent} from './developer/addproduct/addproduct.component';
+import {DetailsComponent} from './developer/addproduct/details/details.component';
+import {InventoryComponent} from './developer/addproduct/inventory/inventory.component';
+import {CustomfieldsComponent} from './developer/addproduct/customfields/customfields.component';
+import {DeliveryComponent} from './developer/addproduct/delivery&eventdate/delivery.component';
+import {BulkpricingComponent} from './developer/addproduct/bulkpricing/bulkpricing.component';
 import {ResellerComponent} from './reseller/reseller.component';
 import {NotfoundComponent} from './not-found/not-found.component';
 
@@ -34,6 +40,12 @@ const appRoutes: Routes = [
     {path: 'admin',component:AdminComponent},
     {path: 'merchant',component:MerchantComponent},
     {path: 'developer',component:DeveloperComponent},
+    {path: 'addproduct',component:AddproductComponent},
+    {path: 'details',component:DetailsComponent},
+     {path: 'inventory',component:InventoryComponent},
+     {path: 'customfields',component:CustomfieldsComponent},
+     {path: 'delivery&eventdate',component:DeliveryComponent},
+     {path: 'bulkpricing',component:BulkpricingComponent},
     {path: 'reseller',component:ResellerComponent},
     { path: '**', component: NotfoundComponent }
 

@@ -19,6 +19,12 @@ import {ViewuserComponent} from './manageusers/viewuser/viewuser.component';
 import {AdminComponent} from './admin/admin.component';
 import {MerchantComponent} from './merchant/merchant.component';
 import {DeveloperComponent} from './developer/developer.component';
+import {AddproductComponent} from './developer/addproduct/addproduct.component';
+import {DetailsComponent} from './developer/addproduct/details/details.component';
+import {InventoryComponent} from './developer/addproduct/inventory/inventory.component';
+import {CustomfieldsComponent} from './developer/addproduct/customfields/customfields.component';
+import {DeliveryComponent} from './developer/addproduct/delivery&eventdate/delivery.component';
+import {BulkpricingComponent} from './developer/addproduct/bulkpricing/bulkpricing.component';
 import {ResellerComponent} from './reseller/reseller.component';
 import {NotfoundComponent} from './not-found/not-found.component';
 
@@ -40,7 +46,13 @@ import {NotfoundComponent} from './not-found/not-found.component';
     AdminComponent,
     MerchantComponent,
     DeveloperComponent,
-   ResellerComponent,
+    AddproductComponent,
+    DetailsComponent,
+    InventoryComponent,
+    CustomfieldsComponent,
+    DeliveryComponent,
+    BulkpricingComponent,
+    ResellerComponent,
     NotfoundComponent
   ],
   imports: [
